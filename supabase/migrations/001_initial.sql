@@ -85,3 +85,5 @@ revoke insert, update, delete on public.conversations, public.conversation_membe
 
 -- Permite entrega de eventos INSERT pelo Supabase Realtime, aplicando RLS aos assinantes.
 alter publication supabase_realtime add table public.messages;
+alter publication supabase_realtime add table public.conversation_members;
+alter publication supabase_realtime add table public.conversations;
